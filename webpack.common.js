@@ -27,24 +27,12 @@ module.exports = {
 			use: [MiniCssExtractPlugin.loader, "css-loader", "postcss-loader", "sass-loader"]
 		},
 		{
-			test: /\.(jpe?g|png|gif)$/i,
+			test: [/\.(ttf|eot|svg|otf)(\?v=[0-9]\.[0-9]\.[0-9])?$/,
+							/\.(jpe?g|png|gif)$/i],
 			use: [{
 				loader: "file-loader",
 				options: {
-					name: "[path][name].[ext]",
-					outputPath: "./",
-					context: path.resolve(__dirname, "src")          
-				}
-			}]
-		},
-		{
-			test: /\.(ttf|eot|svg|otf)(\?v=[0-9]\.[0-9]\.[0-9])?$/,
-			use: [{
-				loader: "file-loader",
-				options: {
-					name: "[path][name].[ext]",
-					outputPath: "./",
-					context: path.resolve(__dirname, "src")   
+					name: "[path][name].[ext]"
 				}
 			}]
 		},
