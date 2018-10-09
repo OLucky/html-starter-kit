@@ -1,1 +1,1 @@
-console.log("General Kenobi!");
+console.log('General Kenobi!');

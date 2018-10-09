@@ -21,9 +21,9 @@
         "valid-typeof": "warn",
         "quotes": [
             "error",            
-            "double"
+            "single"
         ],
-        "indent": ["error", "tab"],
+        "indent": ["error", 2],
         "semi":"warn",
         "no-mixed-spaces-and-tabs":"warn"
     },

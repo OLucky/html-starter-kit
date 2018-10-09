@@ -1,3 +1,3 @@
-import "./styles.scss";
+import './styles.scss';
 
-import "./scripts/general";
+import './scripts/general';
