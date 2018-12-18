@@ -13,7 +13,6 @@
 
 ## <a id="features"></a>Основные возможности
 - Бандлинг и минификация JS и CSS с помощью Webpack.
-- Hot Reloading с использованием Webpack Serve и BrowserSync.
 - Поддержка js, scss, css, png, jpg, svg, ttf, eot, svg, otf файлов.
 - Поддержка свойств современного JS (ES6+) с использованием Babel для поддержки старых браузеров.
 - Линтинг JS и поддержание стиля кода с использованием ESLint.

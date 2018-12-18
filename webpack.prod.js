@@ -13,18 +13,18 @@ module.exports = {
     }
   },
   output: {
-    path: path.resolve(__dirname, 'dist'),
+    path: path.resolve(__dirname, 'build'),
     publicPath: ''
   },
   plugins: [
     new BundleAnalyzerPlugin({
       analyzerMode: process.env.ANALYZE_BUNDLE ? 'server' : 'disabled'
     }),
-    new CleanWebpackPlugin(['dist']),
+    new CleanWebpackPlugin(['build']),
     new CopyWebpackPlugin([
       {
         from: path.join(__dirname, 'src/static'),
-        to: path.join(__dirname, 'dist'),
+        to: path.join(__dirname, 'build'),
         ignore: ['placeholder.txt']
       }
     ])

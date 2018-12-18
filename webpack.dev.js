@@ -22,12 +22,15 @@ module.exports = {
         proxy: 'http://localhost:9000/'
       },
       {
-        reload: false
+        reload: true
       }
     )
   ],
-  serve: {
+  devServer: {
+    compress: true,
     port: 9000,
-    content: [path.join(__dirname, 'serve')]
+    contentBase: [path.join(__dirname, 'serve')],
+    historyApiFallback: true,
+    clientLogLevel: 'none',
   }
 };

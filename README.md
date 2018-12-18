@@ -1,7 +1,6 @@
 # html-starter-kit
 
 ## Features
-- Hot Reloading with Webpack Serve.
 - Support for js, scss, css, png, jpg, svg, ttf, eot, svg, otf from the box.
 - Usage of ES6+ features with Babel.
 - JS linting with ESLint.
